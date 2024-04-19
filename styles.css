@@ -1,0 +1,588 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Merriweather";
+}
+
+/* PROPIEDADES GENERALES */
+
+.flex {
+  display: flex;
+}
+
+.unstyled_list {
+  list-style: none;
+}
+
+.content {
+  max-width: 992px;
+  margin: auto;
+}
+/* PROPIEDADES GENERALES */
+
+.top_bar_link {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  padding: 8px 32px;
+  gap: 10px;
+}
+
+.top_bar {
+  top: 0;
+  justify-content: end;
+  background-color: rgb(114, 136, 120);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header {
+  background-color: #f7f6f6;
+  position: fixed;
+  width: 100%;
+  top: 40px;
+  z-index: 10;
+}
+
+nav {
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav_item {
+  margin: 0px 18px;
+  color: #121212;
+  font-weight: bold;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #121212;
+}
+
+.nav_link:visited {
+  text-decoration: none;
+  color: #121212;
+}
+
+.nav_toggle {
+  color: #121212;
+  background: none;
+  border: none;
+  padding-top: 10px;
+
+  display: none;
+}
+
+.sub_menu {
+  position: fixed;
+  background-color: #c0c7c2;
+  display: none;
+}
+
+.sub_nav_link {
+  text-decoration: none;
+  line-height: 50px;
+  padding: 18px;
+  color: rgb(114, 136, 120);
+}
+
+.sub_nav_item:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+nav li:hover > .sub_menu {
+  display: block;
+  z-index: 10;
+}
+
+.acordeon {
+  display: none;
+}
+
+main {
+  margin: 220px 0 30px 0;
+  height: 100%;
+}
+
+.slider {
+  height: 400px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  width: 300%;
+  animation: slide 20s infinite ease-in-out;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+.slider img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.index_cuerpo {
+  text-align: center;
+  max-width: 992px;
+  margin: 60px auto;
+}
+
+.index_cuerpo h1 {
+  margin: 20px 0;
+}
+
+.index_servicios {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services_card {
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  max-width: 220px;
+  text-align: center;
+  padding: 10px 20px;
+  border: outset 3px #c0c7c2;
+}
+
+.services_card p {
+  padding: 10px 0;
+}
+
+.material-symbols-outlined.card_logo {
+  font-size: 60px;
+}
+
+footer {
+  background-color: rgb(114, 136, 120);
+  height: 150px;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer_content {
+  justify-content: space-around;
+  align-items: center;
+  max-width: 992px;
+  gap: 100px;
+}
+
+.footer_item {
+  color: white;
+}
+
+.footer_link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
+  align-items: center;
+}
+
+.call_to_action {
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 50px;
+}
+
+.nosotros_hero {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.nosotros_card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 300px;
+  height: 300px;
+  border: inset 4px #c0c7c2;
+  padding: 40px;
+  border-radius: 100%;
+}
+
+.nosotros_card h2 {
+  margin: 10px 0;
+}
+
+.nosotros_item {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.valores {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.lista_valores {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #c0c7c2;
+  padding: 30px;
+}
+
+.lista_valores li {
+  margin: 0 30px;
+}
+
+.nosotros_content {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.card_link {
+  text-decoration: none;
+  color: #121212;
+  
+}
+
+.card_link:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(192, 199, 194, 1) 100%
+  );
+}
+
+.card_link:visited {
+  color: #121212;
+}
+
+.paquete {
+  padding: 20px 0;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.paquete_content {
+  flex-basis: 70%;
+  border-left: #c0c7c2 solid 20px;
+  padding-left: 30px;
+  min-height: 200px;
+}
+
+.paquete_title {
+  margin-top: 10%;
+  flex-basis: 165px;
+}
+
+.paquete_lista {
+  line-height: 40px;
+  margin-left: 50px;
+}
+
+/* .catalog {
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .standby {
+  padding: 50px;
+  background-color: #c0c7c2;
+  cursor: pointer;
+}
+
+.standby:hover {
+  background-color:#f7f6f6;
+} */
+
+.boton_reserva {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #c0c7c2;
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease-in; 
+  
+
+}
+
+.boton_reserva:hover {
+  background-color:aliceblue;
+  color: #121212;
+}
+
+.boton_reserva_small {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 18px auto;
+  text-align: center;
+  padding: 8px;
+  background-color: #c0c7c2;
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease-in; 
+  
+}
+
+.boton_reserva_small:hover {
+  background-color:aliceblue;
+  color: #121212;
+}
+
+.cards_large {
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.large_card {
+  padding: 30px;
+  border: outset 2px #c0c7c2;
+  margin: 8px;
+}
+.large_card h3 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.large_card ul {
+  margin-top: 20px;
+  margin-left: 40px;
+  line-height: 30px;
+}
+
+
+.paquetes_cards {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 0;
+  gap: 8px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+
+}
+
+.paquetes_cards>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  border: #c0c7c2 outset 2px;
+  height: 350px;
+  padding: 20px;
+}
+
+.paquetes_cards p{
+  text-align: center;
+  margin: 8px auto;
+  max-width: 200px;
+}
+
+.wellness_area_hero{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wellness_area_hero_title {
+  margin: 20px 0;
+}
+
+.wellness_area_hero_paraph {
+  margin: 30px 0;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav_toggle {
+    display: block;
+  }
+
+  .top_bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top_bar_link {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  header {
+    height: 140px;
+    align-items: center;
+    top: 68px;
+  }
+
+  nav {
+    height: 140px;
+    justify-content: space-around;
+  }
+
+  nav img {
+    width: 200px;
+  }
+
+  .nav_menu {
+    text-align: center;
+    background-color: rgb(124, 132, 116);
+    position: fixed;
+    left: 0;
+    top: 208px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 50px;
+    padding: 10px 0;
+
+    height: calc(100% - 208px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+
+    z-index: 10;
+  }
+
+  .nav_menu_visible {
+    left: 0;
+  }
+
+  .nav_item {
+    margin: 0;
+  }
+
+  .sub_menu {
+    position: relative;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .acordeon {
+    display: block;
+  }
+
+  .drop_span {
+    display: flex;
+    align-items: center;
+  }
+
+  .slider {
+    margin: 30px 0;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer_item {
+    color: white;
+  }
+
+  .footer_link {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 30px;
+    align-items: center;
+  }
+
+  .sub_menu {
+    background-color: transparent;
+    list-style: circle;
+    text-align: left;
+  }
+
+  .sub_nav_link {
+    color: white;
+    padding: 0;
+  }
+
+  .sub_nav_item:hover {
+    background-color: transparent;
+  }
+
+  .index_cuerpo {
+    padding: 0 30px;
+  }
+
+  .services_card {
+    max-width: 300px;
+  }
+
+  .nosotros_item {
+    overflow-x: scroll;
+  }
+
+  .paquete {
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px;
+    flex-basis: 0px;
+  }
+
+  .paquete_title{
+    margin: 0;
+    padding: 10px;
+    flex-basis: 0px;
+
+  }
+
+  .paquete_content{
+    margin: 10px;
+  }
+
+  .call_to_action {
+    gap: 40px;
+  }
+  
+
+}
